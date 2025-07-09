@@ -111,6 +111,9 @@ document.querySelector(".fa-moon").addEventListener('click', function(){
 const sec = document.getElementById('home-page');
  sec.classList.toggle('section2')
 
+ const eleven = document.getElementById('icons')
+ eleven.classList.toggle('icons8')
+
  const about = document.getElementById('about-page')
  about.classList.toggle('about2')
 
@@ -137,4 +140,46 @@ const sec = document.getElementById('home-page');
 
  const again = document.getElementById('grid5')
  again.classList.toggle('grid-c')
-}); 
+
+
+ const contact = document.getElementById('contact-page' )
+ contact.classList.toggle('contact2')
+
+
+ const information = document.getElementById('container00')
+ information.classList.toggle('grid7-a')
+
+ const one = document.getElementById('grid9')
+ one.classList.toggle('grid9-a')
+
+ const two = document.getElementById('grid10')
+ two.classList.toggle('grid10-a')
+
+ const three = document.getElementById('grid11')
+ three.classList.toggle('grid11-a')
+
+ const four = document.getElementById('grid8')
+ four.classList.toggle('grid8-a')
+
+for (const input of document.getElementsByClassName('inputs')) {
+  input.classList.toggle('input2');
+}
+
+const five = document.getElementById('textarea')
+five.classList.toggle('textarea2')
+
+const six = document.getElementById('footer')
+six.classList.toggle('footer2')
+
+const seven = document.getElementById('box-a')
+seven.classList.toggle('box-b')
+
+const eight = document.getElementById('box-c')
+eight.classList.toggle('box-d')
+
+const nine = document.getElementById('box-e')
+nine.classList.toggle('box-f')
+
+const ten = document.getElementById('box-i')
+ten.classList.toggle('box-j')
+});

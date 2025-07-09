@@ -1,4 +1,6 @@
-/* ---------- LARGE TABLETS & SMALL LAPTOPS (1024px - 1439px) ---------- */
+ 
+/*  
+
 @media screen and (max-width: 1439px) and (min-width: 1024px) {
   #logo {
     margin-left: 150px !important;
@@ -61,7 +63,7 @@
 }
 
 
-/* ---------- SMALL TABLETS (768px - 1023px) ---------- */
+
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .navbar ul {
     flex-wrap: wrap;
@@ -164,7 +166,6 @@
 }
 
 
-/* ---------- MOBILE DEVICES (Below 768px) ---------- */
 @media screen and (max-width: 767px) {
   .navbar ul {
     flex-direction: column;
