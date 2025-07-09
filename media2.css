@@ -1,0 +1,289 @@
+/* ---------- LARGE TABLETS & SMALL LAPTOPS (1024px - 1439px) ---------- */
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  #logo {
+    margin-left: 150px !important;
+  }
+
+  #heading, #heading1 {
+    padding-left: 250px !important;
+  }
+
+  #heading2 {
+    padding-left: 250px !important;
+  }
+
+  #hr1 {
+    margin-left: 250px;
+  }
+
+  .section img {
+    margin-right: 150px;
+    width: 400px;
+  }
+
+  .about img {
+    margin-left: 250px;
+    width: 25%;
+  }
+
+  #heading4 {
+    margin-right: 400px;
+  }
+
+  #paragraph1 {
+    margin-right: 250px;
+  }
+
+  #button1 {
+    margin-left: 600px;
+  }
+
+  #heading5, .buttons button {
+    margin-left: 600px !important;
+  }
+
+  .box1, .box2 {
+    margin-left: 100px;
+    width: 500px;
+  }
+
+  #grid1, #grid3, #grid5 {
+    margin-left: 200px;
+  }
+
+  #grid2, #grid4, #grid6 {
+    margin-left: 0px;
+  }
+
+  #grid7 {
+    margin-left: 200px;
+  }
+}
+
+
+/* ---------- SMALL TABLETS (768px - 1023px) ---------- */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #logo {
+    margin-left: 0px !important;
+    font-size: 28px;
+  }
+
+  .navbar ul li {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #heading, #heading1 {
+    font-size: 40px;
+    padding-left: 100px !important;
+    padding-top: 200px;
+  }
+
+  #heading2 {
+    font-size: 22px;
+    padding-left: 100px !important;
+  }
+
+  #hr1 {
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  .section img {
+    width: 300px;
+    margin-right: 50px;
+    margin-top: -200px;
+  }
+
+  .icons {
+    margin-right: -600px;
+    margin-top: 350px;
+  }
+
+  .about img {
+    margin-left: 100px;
+    width: 35%;
+  }
+
+  #heading4 {
+    margin-right: 200px;
+    font-size: 28px;
+  }
+
+  #paragraph1 {
+    margin-right: 100px;
+    font-size: 16px;
+  }
+
+  #button1 {
+    margin-left: 300px;
+    top: -150px;
+    width: 150px;
+  }
+
+  #heading5 {
+    margin-left: 300px;
+  }
+
+  .buttons button {
+    margin-left: 300px !important;
+    margin-top: 10px;
+  }
+
+  .box1, .box2 {
+    margin-left: 100px;
+    width: 90%;
+  }
+
+  #grid1, #grid3, #grid5 {
+    margin-left: 100px;
+  }
+
+  #grid2, #grid4, #grid6 {
+    margin-left: 0px;
+  }
+
+  #grid7 {
+    margin-left: 100px;
+    width: 90%;
+  }
+
+  #grid8 {
+    margin-left: 0px;
+    width: 90%;
+  }
+
+  #input, #textarea, #btn1 {
+    width: 90% !important;
+  }
+}
+
+
+/* ---------- MOBILE DEVICES (Below 768px) ---------- */
+@media screen and (max-width: 767px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .navbar ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  #logo {
+    font-size: 25px;
+    margin-left: 0px !important;
+  }
+
+  #heading, #heading1 {
+    font-size: 30px;
+    padding-left: 20px !important;
+    padding-top: 150px;
+  }
+
+  #heading2 {
+    font-size: 18px;
+    padding-left: 20px !important;
+  }
+
+  #hr1 {
+    width: 250px;
+    margin-left: 20px;
+  }
+
+  .section img {
+    width: 250px;
+    margin-right: 20px;
+    margin-top: -150px;
+  }
+
+  .icons {
+    margin-right: -250px;
+    margin-top: 300px;
+    gap: 100px;
+  }
+
+  .about {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .about img {
+    width: 60%;
+    margin-left: 20px;
+  }
+
+  #heading4, #paragraph1, #heading5 {
+    float: none;
+    margin: 20px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  #paragraph1 {
+    font-size: 16px;
+  }
+
+  #button1 {
+    margin: 20px auto;
+    display: block;
+    top: 0;
+    width: 80%;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .buttons button {
+    margin: 10px 5px;
+  }
+
+  .services-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1, .box2 {
+    width: 90%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  #grid1, #grid3, #grid5,
+  #grid2, #grid4, #grid6 {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .contact-container {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid-container2 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  #grid7, #grid8 {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #input, #textarea, #btn1 {
+    width: 90% !important;
+  }
+}
