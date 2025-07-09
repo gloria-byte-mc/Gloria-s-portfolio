@@ -1,0 +1,259 @@
+/* LAPTOPS */
+@media screen  and (max-width: 1440px) {
+  .navbar{
+  height:50px;
+  position:sticky;
+  top:0;
+  z-index: 1000;
+ 
+ 
+  
+}
+ #logo{
+ margin-left:100px !important; 
+ font-size: 20px;
+ padding-top: 20px;
+word-wrap: none;
+width: 100%;
+/* background-color: blanchedalmond; */
+ }
+ #home{
+  padding-left: 80px ;
+}
+ .navbar ul li{
+  margin-right: 45px;
+  font-size: 20px;
+  padding-top: 20px;
+ position: relative;
+/* background-color: aqua; */
+}
+ #heading{
+  padding-left: 30px !important;
+  font-size: 50px;
+  padding-top: 250px;
+ }
+ #heading1{
+  padding-left: 30px;
+  font-size: 50px;
+ }
+ #heading2{
+  padding-left: 30px !important;
+  font-size: 30px !important;
+  
+ }
+ #hr1{
+  margin-left: 30px;
+  width: 450px;
+ }
+
+ .section img{
+  margin-right: 260px !important;
+  max-width: 400px;
+  height: 80%;
+ }
+ .icons{
+  margin-right: -900px;
+ gap: -50% !important;
+ 
+ }
+
+ .icons img{
+  height: 30px;
+  width: 30px;
+  
+}
+
+
+/* ABOUTR */
+
+ .about img{
+  margin-left: 50px;
+  
+ }
+ #heading3{
+  padding-top: 4rem;
+  margin-bottom: 0;
+  
+}
+ #heading4{
+  margin-right: 550px;
+  margin-top: 15px;
+ 
+ }
+ #paragraph1{
+  margin-right: 280px;
+  margin-top: -310px;
+  font-size: 18px;
+ }
+ #button1{
+  margin-left: 483px;
+  margin-top: 100px;
+ 
+ }
+ #heading5{
+  margin-left: 480px;
+  margin-top: -200px;
+ }
+
+ #button2{
+ margin-left: 480px;
+ margin-top: 10px;
+ }
+
+ #heading6{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 10rem;
+}
+.grid-container{
+  display:grid;
+  column-gap: 110px;
+  row-gap: 50px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  align-items: center;
+}
+ .box1{
+  margin-left: 50px;
+ }
+ #grid1{
+  margin-left: 50px;
+ }
+ #grid2{
+  margin-left: -150px;
+ }
+ #grid3{
+  margin-left: 50px;
+ }
+ #grid4{
+  margin-left: -150px;
+ }
+ #grid5{
+  margin-left: 50px;
+ }
+ #grid6{
+  margin-left: -150px;
+ }
+ #grid7{
+  margin-left: 50px;
+   height: 450px;
+  width:400px;
+ }
+ #grid8{
+  margin-left: -150px;
+    height: 450px;
+  width: 600px;
+ }
+ #input{
+ height: 60px;
+ width:520px;
+ margin-top: 10px;
+}
+#textarea{
+  margin-top: 20px;
+  height: 70px;
+  width: 520px;
+}
+#btn1{
+  width:520px;
+  margin-top: 10px;
+}
+.grid-container3{
+  display:grid;
+  column-gap: 10px;
+  row-gap: 5px;
+  grid-template-columns: auto ;
+  padding: 10px;
+  align-items: center;
+}
+#heading11{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+#paragraph4{
+  font-size: 18px;
+
+}
+#grid9{
+  height: 60px;
+ margin-top: 12px;
+}
+#grid9 i {
+  font-size: 15px !important;
+}
+#grid9 label {
+  font-size: 18px !important;
+
+}
+#grid9 p {
+  padding-top: 5px !important;
+  font-size: 18px !important;
+}
+#grid10{
+  height: 60px;
+ margin-top: 12px;
+}
+#grid10 i {
+  font-size: 15px !important;
+}
+#grid10 label {
+  font-size: 18px !important;
+
+}
+#grid10 p {
+  padding-top: 5px !important;
+  font-size: 18px !important;
+}
+#grid11{
+  height: 60px;
+ margin-top: 12px;
+}
+#grid11 i {
+  font-size: 15px !important;
+}
+#grid11 label {
+  font-size: 18px !important;
+
+}
+#grid11 p {
+  padding-top: 5px !important;
+  font-size: 18px !important;
+}
+#images1{
+  height: 30px !important;
+  margin-left: 40px !important;
+  gap:20px;
+}
+#images2{
+  height: 30px !important;
+  margin-left: 10px !important;
+  gap:20px;
+}
+#images3{
+  height: 30px !important;
+  margin-left: 10px !important;
+  gap:20px;
+}
+.media{
+  margin-top: -5px;
+}
+#heading10{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+ 
+}
+
+  }
+
+  /* MOBIE PHONES */
+  @media screen and (max-width: 1024px){
+    #logo{
+      margin-left: 30px !important;
+    }
+
+
+
+  }

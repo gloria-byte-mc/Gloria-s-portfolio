@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gloria's portfolio</title>
+
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* Grid Layout for Portfolio */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            grid-template-rows: repeat(3, auto); /* Three rows */
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Base styles for all project boxes */
+        .project-box {
+            background-color: white;
+            border: 1px solid #dee3ea;
+            border-radius: 20px;
+            padding: 25px;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            animation: slideInFromLeft 1.7s ease forwards;
+        }
+
+        .project-box:hover {
+            border: 1px solid #ff6b6b;
+            box-shadow: 0 8px 20px rgba(254, 156, 156, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* Image boxes */
+        .image-box {
+            background-color: white;
+            border: 1px solid #dee3ea;
+            border-radius: 20px;
+            overflow: hidden;
+            min-height: 300px;
+            transition: all 0.3s ease;
+            animation: slideInFromRight 1.7s ease forwards;
+        }
+
+        .image-box:hover {
+            border: 1px solid #ff6b6b;
+            box-shadow: 0 8px 20px rgba(254, 156, 156, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Keep your existing styles for headings and buttons */
+        #heading8 {
+            color: #374151;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        #heading8::after {
+            content: "";
+            position: absolute;
+            width: 10%;
+            height: 2px;
+            background-color: #ff6b6b;
+            bottom: -1px;
+            left: 0;
+            transition: width 0.2s;
+        }
+
+        #heading8:hover::after {
+            width: 30%;
+        }
+
+        #paragraph2 {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #4b5563;
+            font-size: 16px;
+            flex-grow: 1;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        #btn {
+            color: #ff6b6b;
+            background-color: rgba(255, 107, 107, 0.1);
+            font-size: 0.85rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #btn:hover {
+            background-color: #ff6b6b;
+            color: white;
+        }
+
+        #view-live {
+            border: 2px solid #ff6b6b;
+            border-radius: 4px;
+            color: #ff6b6b;
+            background-color: #fff;
+            width: 120px;
+            height: 50px;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        #view-live:hover {
+            color: white;
+            background-color: #ff6b6b;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, auto);
+                gap: 20px;
+                padding: 10px;
+            }
+        }
+
+        /* Animations */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-150px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(150px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+  </head>
+  <body>
+
+<nav class="navbar">
+  <ul>
+    <li id="logo">Gloria Machoka</li>
+
+    <a href="index.html"  style="color:black; text-decoration: none;"><li id="home">Home </li></a>
+    <a href="#about-page"  style="color:black; text-decoration: none;">
+    <li>About </li>
+    </a>
+    <a href="#services-page" style="color: black; text-decoration: none;">
+    <li>Services </li>
+    </a>
+    <a href="#portfolio-page" style="color:black; text-decoration: none;">
+    <li>Portfolio</li>
+    </a>
+    <li>Contact</li>
+    <li></li>
+  </ul>
+
+</nav>
+
+<section class="section">
+
+  <div class="intro" >
+<h1 id="heading">Hi, I'm <span id="span1">Gloria </span></h1>
+<h1 id="heading1"><span id="span1">Machoka<span></h1><br>
+  <h2 id="heading2" style="font-size: 30px; font-weight:300; color:#4b5563; padding-left: 400px;">Web Developer, UI/UX Designer</h2>
+
+  <hr id="hr1"></hr>
+  </div>
+  <img src="thisimages/c1bb571f91dd019e76391089e99b6f55.jpg"  alt="image">
+
+  <div class="icons">
+  <img src="thisimages/github.png">
+  <img src="thisimages/linkedin.png">
+  <img src="thisimages/phone.png">
+  <img src="thisimages/message.png">
+  <img src="thisimages/whatsapp.png">
+  </div>
+</section>
+
+
+<div class="about" id="about-page">
+<h2 id="heading3">About me</h2>
+
+<img src="thisimages/c1bb571f91dd019e76391089e99b6f55.jpg" alt="image">
+
+
+<h2 id="heading4">Get to know me</h2>
+
+
+<p id="paragraph1">Hi, I'm Gloria Machoka. As a passsionate software developer, I enjoy<br> turning ideas into  reality through clean,efficient, and scalable code.<br>I have experience building web application and user-friendly <br>interfaces using modern technologies.I'm always learning and love<br>solving problems on front-end design.<br>
+My goal is to create solutions that not only work but also make a<br>positive impact.   
+</p>
+
+<a href="cvfolder/GLORIA  MACHOKA CV.pdf"> 
+
+<button id="button1" type="button"><i class="fas fa-file-pdf"></i>
+ View Resume</button>
+</a>
+
+<h2 id="heading5">Tech Stack</h2>
+
+<div class="buttons">
+<button id="button2" type="button">HTML</button>
+<button id="button3" type="button">CSS</button>
+<button id="button4" type="button">Javascript</button>
+<button id="button5" type="button">SQL</button>
+</div>
+
+</div>
+
+<div class="services" id="services-page">
+<h2 id="heading6">Services</h2>
+
+<div class="services-boxes">
+<div class="box1">
+<div class="box1-inner">
+<div class="box1-front">
+   <i id="t-icons" class="fa-solid fa-code" style="font-size: 40px; color:#2b4c7e; margin-top: 10px; margin-bottom: 10px;"></i>
+ <h2>Web Development</h2>
+  <p>Creating responsive and modern websites</p>
+</div>
+<div class="box1-back">
+ <h2>Technologies</h2><br>
+<p>HTML, CSS, JavaScript</p>
+</div>
+</div>
+</div>
+
+<div class="box2">
+<div class="box2-inner">
+<div class="box2-front">
+   <i id="t-icons" class="fa-solid fa-palette" style="font-size: 40px; color:#2b4c7e; margin-top: 10px; margin-bottom: 10px;"></i>
+<h2>UI/UX Design</h2>
+<p>creative beautiful and intuitive user interfaces</p>
+</div>
+<div class="box2-back">
+<p>I create clean, intuitive user interfaces that enhance the overall user experience. By focusing on layout, navigation, and usability, I ensure that every design is not only visually appealing but also easy to interact with, keeping users engaged and satisfied.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="portfolio" id="portfolio-page">
+<h2 id="heading7">Portfolio</h2>
+
+<div class="grid-container">
+  <!-- Row 1 -->
+  <div class="project-box">
+    <h3 id="heading8">Hotel Booking Site</h3>
+    <p id="paragraph2">A sample hotel website with room and form validation features. Built with responsive design principles and optimized for seamless user experience</p>
+
+    <div class="tech-stack">
+      <button id="btn">HTML</button>
+      <button id="btn">CSS</button>
+      <button id="btn">JavaScript</button>
+    </div>
+
+    <a href="https://riverside-hotel-website.vercel.app/">
+      <button id="view-live">View Live</button>
+    </a>
+  </div>
+
+  <div class="image-box">
+    <img src="thisimages/riverside.png" alt="Hotel Website">
+  </div>
+
+  <!-- Row 2 -->
+  <div class="image-box">
+    <img src="https://via.placeholder.com/500x300/28A745/FFFFFF?text=Project+2" alt="Project 2">
+  </div>
+
+  <div class="project-box">
+    <h3 id="heading8">E-commerce Platform</h3>
+    <p id="paragraph2">A full-featured online shopping platform with user authentication, product catalog, shopping cart, and payment integration.</p>
+
+    <div class="tech-stack">
+      <button id="btn">React</button>
+      <button id="btn">Node.js</button>
+      <button id="btn">MongoDB</button>
+    </div>
+
+    <a href="#">
+      <button id="view-live">View Live</button>
+    </a>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="project-box">
+    <h3 id="heading8">Task Management App</h3>
+    <p id="paragraph2">A collaborative task management application with real-time updates, team collaboration features, and deadline tracking.</p>
+
+    <div class="tech-stack">
+      <button id="btn">Vue.js</button>
+      <button id="btn">Express</button>
+      <button id="btn">Socket.io</button>
+    </div>
+
+    <a href="#">
+      <button id="view-live">View Live</button>
+    </a>
+  </div>
+
+  <div class="image-box">
+    <img src="https://via.placeholder.com/500x300/DC3545/FFFFFF?text=Project+3" alt="Project 3">
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>
