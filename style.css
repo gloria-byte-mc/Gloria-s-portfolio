@@ -250,8 +250,11 @@ box-shadow: 0 0 9px 1px #ff6b6b;
   margin-right: 379px;
   margin-top: -440px;
   font-size: 20px;
-  color:#8892b0;
+  color:#4b5563;
   animation: slideInFromRight 1.7s ease forwards;
+}
+.about2 #paragraph1{
+  color:#8892b0;
 }
 #button1{
   margin-left:970px;
