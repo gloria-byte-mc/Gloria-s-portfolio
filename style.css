@@ -108,8 +108,8 @@ content: none;
 .section2 #span1{
   color:#ff6b6b;
 }
-#heading2{
-   
+.section2  #heading2{
+   color:#8892b0 !important;
 }
 #hr1{
   width:500px;
@@ -250,7 +250,7 @@ box-shadow: 0 0 9px 1px #ff6b6b;
   margin-right: 379px;
   margin-top: -440px;
   font-size: 20px;
-  color:#4b5563;
+  color:#8892b0;
   animation: slideInFromRight 1.7s ease forwards;
 }
 #button1{
